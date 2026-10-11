@@ -3,7 +3,9 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "tsc && vite build",
+        "build": "tsc && vite build --mode static",
+        "build:static": "vite build --mode static",
+        "build:laravel": "vite build",
         "build:widget": "vite build --config vite.widget.config.js",
         "dev": "vite"
     },
